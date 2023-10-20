@@ -11,7 +11,7 @@ sonuc = nowTime.getTime();
 
 //Set Methods
 nowTime.setFullYear(2025);  
-nowTime.setMonth(7);
+nowTime.setMonth(7);  
 sonuc = nowTime;
 
 

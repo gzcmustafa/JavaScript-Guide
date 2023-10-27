@@ -61,17 +61,17 @@
 
 
 //innerHTML ile'de yapabiliriz. ama burada direk html kodları yazmamız lazım. Örnek;
-// const lists = `
-// <li>Lİste-1</li>
-// <li>Liste-2</li>
-// <li>Liste-3</li>
-// <li>Liste-4</li>
-// <li>Liste-5</li>
-// <li>Liste-6</li>
-// <li>Liste-7</li>
-// `
-// const ul = document.querySelector("ul")
-// ul.innerHTML = lists
+const lists = `
+<li>Lİste-1</li>
+<li>Liste-2</li>
+<li>Liste-3</li>
+<li>Liste-4</li>
+<li>Liste-5</li>
+<li>Liste-6</li>
+<li>Liste-7</li>
+`
+const ul = document.querySelector("ul")
+ul.innerHTML = lists
 
 
 // Renk ve Arka Plan Rengi ekleme

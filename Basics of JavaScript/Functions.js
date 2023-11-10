@@ -1,3 +1,73 @@
+//Fonksiyonlar belirli bir görevi yerine getirmek için tasarlanmış kod bloğudur diyebiliriz.
+
+//basit bir fonksiyon tanımlamak içi;
+function functionName(){
+    // kodları buraya yazarız
+}
+functionName(); // fonksiyonu çağırırız.
+
+
+//bir fonksiyon geriye değer döndürmezse undifend çıktısı verir.
+function sumArrayValues(array){
+    let total = 0;
+    for (let i=0; i<array.length; i++){
+        total += array[i];
+    }
+    return total
+}
+let dizi = [2,4,6,8,10];
+console.log("dizi toplamı: " + sumArrayValues(dizi));
+
+
+//parametre sayısını bilmediğimiz fonksiyonlar için kullanacağımız yapı;
+function topla(){
+    let total = 0;
+    for (let i=0; i < arguments.length; i++){
+        total += arguments[i];
+    }
+    return total
+}
+console.log("toplam = " + topla(2,5,7,8,9,10));
+
+//anonymous Function yani isimsiz fonksiyon diyebiliriz
+const sayHello = function(name){
+    return `Hello ${name}`
+}
+console.log(sayHello('Mustafa'));
+
+
+// expression function yine aynı şekilde anonymous fonksiyon gibi sadece parametre alıyor.
+
+
+// Self Invoking Functions 
+// kendi kendini döndüren fonksiyon yani hiç çağırmamıza bile gerek kalmıyor programı başlattığımız anda çalışır kendileri :) bu fonksiyonu () içine yazıyoruz..
+let sayHello2 = (function(name){
+    console.log(`Hello ${name}`)
+})("Mustafa");
+
+
+// Arrow fonksiyon Nedir ?
+const hello2 = () => {
+
+}
+
+const hello3 = isim => {
+    return `Hallo ${isim}`
+}
+console.log(hello3("Mustafa"));
+
+// Arrow fonksiyonun diğer kullanımı 
+const hello4 = isim3 => `hello ${isim3}`;
+console.log(hello4("Tasson"))
+
+//rest operatörü diye bir operatörü arrow fonksiyonda kullanabiliriz.
+const sayılari = (num1,num2, ...numbers) =>{
+    console.log(num1, num2);
+    console.log(numbers);
+}
+console.log(sayılari(2,5,7,8,9,10,232,3123213,32132131));
+
+
 // // Soru1- Kendisine gönderilen kelimeyi belirtilen kez ekranda yazan fonksiyonu yazınız.
 function kelimeyiYazdir (kelime,sayi){
     for (let i=0; i<sayi;i++){

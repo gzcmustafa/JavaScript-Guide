@@ -50,3 +50,33 @@ console.log(toplam2);
 
 let genelToplam = toplam1 + toplam2;
 console.log(genelToplam);
+
+
+obje örnekleri
+
+const user = {
+    name: 'Mustafa',
+    surname: 'Gözcü',
+    age: 24,
+    isMarried: false,
+    skilss: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Node.JS",
+        "Python"
+    ],
+    cars: [
+        {
+            name:"Audi RS7",
+            myili: 2023
+        },
+        {
+            name:"Mercedes E250",
+            myili:2023
+        }
+    ]
+}
+
+console.log(user);
+console.log(user.cars[1].name);

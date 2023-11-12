@@ -28,16 +28,16 @@ console.log(a(5)(10)(20));
 
 
 // setInterval fonksiyonuda bir higher-order funciton'dur.
-    // function sayHello(){
-    //     console.log('Hello')
-    // }
-    // setInterval(sayHello,1000)
+    function sayHello(){
+        console.log('Hello')
+    }
+    setInterval(sayHello,1000)
 
 //setTimeout fonksiyonuda aynı şekilde higher-order fonksiyondur. 
-// function sayHello(){
-//     console.log('Hello')
-// }
-// setTimeout(sayHello,10000)
+function sayHello(){
+    console.log('Hello')
+}
+setTimeout(sayHello,10000)
 
 function sayHello(){
     console.log('Hello')
@@ -52,3 +52,30 @@ setTimeout(()=>{
     clearTimeout(timeout)
     console.log("timeout işlemi iptal edildi interval devam edeecek")
 },3000)
+
+
+let users = [
+    {
+        id:1,
+        name:"Tayfun",
+        age:14
+    },
+    {
+        id:2,
+        name:"Melis",
+        age:90
+    },
+    {
+        id:3,
+        name:"Tasson",
+        age:40
+    }
+    
+]
+ fonksiyon = users.map(user =>{
+    if(user.id === 2){
+        user.name="Mustafa"
+    }
+})
+
+console.log(users)

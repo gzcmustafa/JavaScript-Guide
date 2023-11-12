@@ -52,7 +52,7 @@ let genelToplam = toplam1 + toplam2;
 console.log(genelToplam);
 
 
-obje örnekleri
+// obje örnekleri
 
 const user = {
     name: 'Mustafa',
@@ -75,8 +75,60 @@ const user = {
             name:"Mercedes E250",
             myili:2023
         }
-    ]
+    ],
 }
 
 console.log(user);
 console.log(user.cars[1].name);
+
+// 2.obje örneği
+const person = {
+    firstName: 'Asabeneh',
+    lastName: 'Yetayeh',
+    age: 250,
+    country: 'Finland',
+    city: 'Helsinki',
+    skills: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'React',
+      'Node',
+      'MongoDB',
+      'Python',
+      'D3.js'
+    ], 
+    getFullName: function(){
+        return `${this.firstName} ${this.lastName}`
+    },
+    'phone number': '32132131321321'
+
+}
+
+//bu değerlere normalde şu şekilde erişebiliyorduk.
+console.log(person.firstName);
+//ama şu şekilde de erişebiliriz:
+console.log(person["firstName"]);
+//metoda ulaşmak için;
+console.log(person.getFullName());
+
+//objede bulunan propertyilere yeni değerler atama ve yeni propertyler ekleme
+ person.nationality="Germany"
+ person.country="Turkey"
+ person.skills.push("Ruby")
+ person.skills.push("Deep Learning")
+ 
+ //objeye yeni metot ekleme
+ person.getPersonInfo = function(){
+    let skillsWithoutLastSkill = this.skilss.splice(0,this.skills.length-1).join(',')
+    let lastSkill = this.skills.splice(this.skills.length - 1)[0]
+    let skills = `${skillsWithoutLastSkill}, and ${lastSkill}`
+    let fullName = this.getFullName()
+    let statement = `${fullName} is a ${this.title}.\nHe lives in ${this.country}.\nHe teaches ${skills}.`
+  return statement
+ }
+ console.log(person)
+console.log(person.getPersonInfo())
+
+
+ console.log(person);

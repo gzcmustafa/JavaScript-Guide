@@ -1,0 +1,26 @@
+[
+    {
+        "firstName":"Mustafa",
+        "lastName":"npm",
+        "age":24,
+        "email":"helloworld@gmail.com"
+    },
+    {
+        "firstName":"ali",
+        "lastName":"npm",
+        "age":20,
+        "email":"helloworld@gmail.com"
+    },
+    {
+        "firstName":"Serkan",
+        "lastName":"npm",
+        "age":45,
+        "email":"helloworld@gmail.com"
+    },
+    {
+        "firstName":"Nazlı",
+        "lastName":"npm",
+        "age":38,
+        "email":"helloworld@gmail.com"
+    }
+]

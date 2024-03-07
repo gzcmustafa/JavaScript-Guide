@@ -63,14 +63,54 @@
 // let job:'Software Engineer';
 // let details: "Hi everybody this article about Javascript."
 
+// console.log('Js\tWeb\tData')
+// console.log('backslash = (\\)') 
+// console.log('Javascript is so popular \'Programming Language\'')
+// console.log('Javascript is so popular \"Programming Language\"')
 
 
+// let sentence = 'I think this article is so useful.'
+// console.log(sentence.length) 
+
+// let word1 = 'hello world'
+// console.log(word1.toUpperCase());
+
+// let word = 'HELLO WORLD'
+// console.log(word.toLowerCase());
+
+// let string = 'JavaScript'
+// console.log(string.substr(4,6))
+
+// let string1 = 'JavaScript'
+// console.log(string1.substring(0,4))
+// console.log(string.substring(4))
+
+// let string = 'Javascript Article'
+// console.log(string.split())
+// console.log(string.split(' '))
+
+// let string = '   js Article  '
+
+// console.log(string)
+// console.log(string.trim())
+
+// let string1 = 'JavaScript Article'
+// console.log(string1.includes('article'))   
+
+// let string2 = 'JS Article'
+// console.log(string2.replace('JS', 'Python'))
+
+// let string3 = 'JS Article'
+// console.log(string3.charAt(6))
+
+// let string4 = 'JS Article'
+// console.log(string4.indexOf('d')) 
 
 
-// let name = "Mustafa"
-// let surname = "Gözcü"
+// const str = 'Hello, world! Hello, JavaScript!';
 
-// let fullName =  name + surname;
-// console.log(fullName)
-let string = 'JavaScript'
-console.log(string.substr(4,6)) // Script
+// const lastIndex = str.lastIndexOf('Hello');
+// console.log(lastIndex);
+
+// let city = 'Heidelberg'
+// console.log(city.concat('City'))

@@ -40,11 +40,11 @@ scopeOrnegi();
 //   console.log("Araba markası: " + araba.marka);
   
 
-const cars = Object.freeze({
-    marka: "Toyota",
-    model: "Corolla",
-    yil: 2020
-})
+// const cars = Object.freeze({
+//     marka: "Toyota",
+//     model: "Corolla",
+//     yil: 2020
+// })
 
-cars.marka = "Honda";
-console.log(cars.marka)
+// cars.marka = "Honda";
+// console.log(cars.marka)

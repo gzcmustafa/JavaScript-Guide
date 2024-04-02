@@ -23,16 +23,28 @@
 
 
 
-for (let i = 0; i < 10; i++) {
-    let title =  document.createElement('h1')
-    title.className = 'title'
-    title.style.fontSize = '24px'
-    title.textContent = 'dsadsada'
-    title.style.backgroundColor = 'red'
+// for (let i = 0; i < 10; i++) {
+//     let title =  document.createElement('h1')
+//     title.className = 'title'
+//     title.style.fontSize = '24px'
+//     title.textContent = 'dsadsada'
+//     title.style.backgroundColor = 'red'
 
-document.body.append(title)
+// document.body.append(title)
     
-}
+// }
 
-  
+// const button = document.getElementById('btn')
+// button.addEventListener('click', function(e){
+//     console.log(e)
+// })
+
+// function clickHandle(e) {
+//     console.log(e)
+// }
+
+const input = document.getElementById('name')
+input.addEventListener('input', e=>{
+    console.log('birseyler yazılıyor', e.target.value)
+})
     
